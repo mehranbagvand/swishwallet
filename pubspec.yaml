@@ -1,0 +1,57 @@
+name: swish
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_easyloading: ^3.0.5
+  contacts_service: ^0.6.3
+  permission_handler: ^10.1.0
+  shimmer: ^2.0.0
+  fluttericon: ^2.0.0
+  get_storage: ^2.0.2
+  dio:
+  logger:
+  jwt_decode:
+  mask_text_input_formatter: ^2.4.0
+  month_year_picker: ^0.2.0+2
+  timeago: ^3.3.0
+  smooth_page_indicator: ^1.0.0+2
+  country_picker: ^2.0.16
+  flutter_image_compress:
+  path_provider:
+  image_cropper:
+  image_picker:
+  dartz:
+  equatable:
+  get_it:
+  sms_user_consent:
+  pin_input_text_field:
+  get:
+  flutter_svg:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/.
+    - assets/images/.
+    - assets/images/icons/.
+    - assets/images/pictures/.
+    - assets/images/vectors/.
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/OutfitSemiBold.ttf

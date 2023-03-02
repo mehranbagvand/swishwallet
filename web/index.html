@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="keywords" content="Mr.bagvand, Wallet, Wallet flutter">
+  <meta name="description" content="A Wallet created with flutter.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Swish Wallet">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Social Media Sharing Meta -->
+  <meta property="og:title" content="Swish Wallet">
+  <meta property="og:site_name" content="Swish Wallet">
+  <meta property="og:description" content="A Wallet created with flutter.">
+  <meta property="og:image" itemprop="image" content="icons/icon-512.png">
+  <meta property="og:url" content="https://applance.net/">
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Mr.bagvand">
+
+
+  <!-- Style for loading -->
+  <link rel="stylesheet" type="text/css" href="./styles.css" >
+
+
+  <title>Swish Wallet</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body onload="loadScript()">
+<div class="center">
+  <div style= "display:block;" id="loading">
+    <div class="loader">
+      <span>{</span><span>}</span>
+    </div>
+  </div>
+</div>
+
+  <script>
+         function loadScript(){
+       setTimeout ( function() {
+             document.getElementById("loading")
+             .style.display="none";
+          }, 25000);
+  }
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        }
+      }).then(function(engineInitializer) {
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        return appRunner.runApp();
+      });
+    });
+  </script>
+</body>
+</html>
